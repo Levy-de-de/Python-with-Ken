@@ -519,12 +519,26 @@
 
 # simple example on intersection of sets  
   
+# set_A = {1, 2, 3}     # set A  
+# print("Set A:", set_A)  
+  
+# set_B = {2, 3, 4, 5}  # set B  
+# print("Set B:", set_B)  
+  
+# print("\nIntersection of Sets A and B:")       # intersection of sets  
+# print("Method 1:", set_A & set_B)       # using &  
+# print("Method 2:", set_A.intersection(set_B))
+
 set_A = {1, 2, 3}     # set A  
 print("Set A:", set_A)  
   
 set_B = {2, 3, 4, 5}  # set B  
 print("Set B:", set_B)  
   
-print("\nIntersection of Sets A and B:")       # intersection of sets  
-print("Method 1:", set_A & set_B)       # using &  
-print("Method 2:", set_A.intersection(set_B))
+print("\nA - B:")       # difference of sets  
+print("Method 1:", set_A - set_B)       # using -  
+print("Method 2:", set_A.difference(set_B))  # using difference()  
+  
+print("\nB - A:")  
+print("Method 1:", set_B - set_A)       # using -  
+print("Method 2:", set_B.difference(set_A))  # using difference()  
