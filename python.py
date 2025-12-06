@@ -529,16 +529,258 @@
 # print("Method 1:", set_A & set_B)       # using &  
 # print("Method 2:", set_A.intersection(set_B))
 
-set_A = {1, 2, 3}     # set A  
-print("Set A:", set_A)  
+# set_A = {1, 2, 3}     # set A  
+# print("Set A:", set_A)  
   
-set_B = {2, 3, 4, 5}  # set B  
-print("Set B:", set_B)  
+# set_B = {2, 3, 4, 5}  # set B  
+# print("Set B:", set_B)  
   
-print("\nA - B:")       # difference of sets  
-print("Method 1:", set_A - set_B)       # using -  
-print("Method 2:", set_A.difference(set_B))  # using difference()  
+# print("\nA - B:")       # difference of sets  
+# print("Method 1:", set_A - set_B)       # using -  
+# print("Method 2:", set_A.difference(set_B))  # using difference()  
   
-print("\nB - A:")  
-print("Method 1:", set_B - set_A)       # using -  
-print("Method 2:", set_B.difference(set_A))  # using difference()  
+# print("\nB - A:")  
+# print("Method 1:", set_B - set_A)       # using -  
+# print("Method 2:", set_B.difference(set_A))  # using difference()  
+
+
+
+# creating dictionaries  
+# dict_zero = {}     # empty dictionary  
+# dict_one = {"name": "Lucy", "age": 19, "city": "New Jersey"} # using {}  
+# dict_two = dict(name = "John", age = 21, city = "Havana")  # using dict()  
+  
+# # printing the results  
+# print("Empty Dictionary:", dict_zero)  
+# print("Dictionary 1 (created using {}):", dict_one)  
+# print("Dictionary 2 (created using dict()):", dict_two)
+
+
+
+  
+# # given dictionary  
+# dict_x = {  
+#     "name": "Sachin",   
+#     "age": 18,   
+#     "gender": "male",   
+#     "profession": "student"  
+#     }  
+  
+# print("Given Dictionary:", dict_x)  
+  
+# # adding an item to the dictionary  
+# dict_x["country"] = "India"  
+  
+# print("Updated Dictionary:", dict_x)
+
+
+# # given dictionary  
+# dict_x = {  
+#     "name": "Sachin",   
+#     "age": 18,   
+#     "gender": "male",   
+#     "profession": "student",  
+#     "country": "India"  
+#     }  
+  
+# print("Given Dictionary:", dict_x)  
+  
+# # removing items from the dictionary  
+# del dict_x['age']     # using del  
+# print("Updated Dictionary (Removed 'age'):", dict_x)  
+  
+# popped_value = dict_x.pop('gender')  # using pop()  
+# # print("Updated Dictionary (Removed 'gender'):", dict_x)  
+# # print("Popped Value:", popped_value)  
+  
+# # popped_item = dict_x.popitem()  # using popitem()  
+# # print("Updated Dictionary (Removed last item):", dict_x)  
+# # print("Popped Item:", popped_item)  
+  
+# # dict_x.clear()  # using clear()  
+# # print("Update Dictionary (Removed all items):", dict_x) 
+
+
+# # # simple example to change dictionary items  
+  
+# # # given dictionary  
+# # dict_x = {  
+# #     "name": "Sachin",   
+# #     "age": 18,   
+# #     "gender": "male",   
+# #     "profession": "student",  
+# #     "country": "India"  
+# #     }  
+  
+# # print("Given Dictionary:", dict_x)  
+  
+# # # changing dictionary items  
+# # dict_x["age"] = 20  
+# # dict_x["profession"] = "developer"  
+  
+# # print("Updated Dictionary:", dict_x) 
+
+
+# # given dictionary  
+# dict_x = {  
+#     "Name": "Sachin",   
+#     "Age": 18,   
+#     "Gender": "Male",   
+#     "Profession": "Student",  
+#     "Country": "India"  
+#     }  
+  
+# print("Items in Dictionary:")  
+# # iterating through a dictionary using for loop  
+# for key in dict_x:  
+#   value = dict_x[key]  
+#   print(key, "->", value)  
+
+
+# employees_info = {  
+#     "John": "Sr. Software Developer",  
+#     "Irfan": "UI/UX Designer",  
+#     "Lucy": "Human Resource Manager",  
+#     "Peter": "Team Lead",  
+#     "Johnson": "Business Developer",  
+#     }  
+  
+# print("Given Data:", employees_info)  
+# # finding length of the dictionary  
+# print("Size of Data:", len(employees_info)) # using len()
+#
+# 
+# 
+
+
+# hon program to show the use of setdefault() method  
+  
+# given dictionary  
+# dict_one = {'name': 'Sachin', 'age': 22}  
+# print("Given Dictionary:", dict_one)  
+  
+# # using the setdefault() method  
+# age = dict_one.setdefault('age', 25)  
+# salary = dict_one.setdefault('salary', 69000)  
+  
+# print("Age:", age)  
+# print("Salary:", salary)  
+# print("Updated Dictionary:", dict_one)
+
+
+
+# # asking age from the user  
+# age = int(input("Enter your age: "))  
+  
+# # multiple if blocks  
+# if age < 18: # checking if age is less than 18  
+#     # printing a message  
+#     print("You are not eligible to vote")  
+  
+# if age >= 18: # checking if age is greater than or equal to 18  
+#     # printing a message  
+#     print("You are eligible to vote.")  
+  
+# if age >= 21: # checking if age is greater than or equal to 21  
+#     # printing a message  
+#     print("You are allowed to consume alcohol in some countries.")  
+  
+# if age >= 60: # checking if age is greater than or equal to 60  
+#     # printing a message  
+#     print("You are eligible for senior citizen benefits.")  
+  
+# if age >= 80: # checking if age is greater than or equal to 80  
+#     # printing a message  
+#     print("You are a very senior citizen. Take extra care of your health.") 
+
+
+
+# # asking user to enter password  
+# password = input("Enter your password: ")  
+  
+# # nested if-else statement: checking whether the password is strong or not  
+# if len(password) >= 8:  # checking the length of the password  
+#   # outer if block  
+#   if any(char.isdigit() for char in password): # checking if the password consists of any numeral value  
+#     # inner if block  
+#     print("Password is strong.")  
+#   else:  
+#     # inner else block  
+#     print("Password must contain at least one number.")  
+# else:  
+#   # outer else block  
+#   print("Password is too short. It must be at least 8 characters long.")
+
+
+# # asking user to enter password  
+# password = input("Enter your password: ")  
+  
+# # nested if-else statement: checking whether the password is strong or not  
+# if len(password) >= 8:  # checking the length of the password  
+#   # outer if block  
+#   if any(char.isdigit() for char in password): # checking if the password consists of any numeral value  
+#     # inner if block  
+#     print("Password is strong.")  
+#   else:  
+#     # inner else block  
+#     print("Password must contain at least one number.")  
+# else:  
+#   # outer else block  
+#   print("Password is too short. It must be at least 8 characters long.")
+
+
+# # asking user to enter their marks  
+# marks = int(input("Enter your marks: "))  
+  
+# # nested if-else statement: checking if the user passed with distinction or not  
+# if marks >= 40: # checking if the user got marks greater than or equal to 40  
+#   # outer if block  
+#   if marks >= 75: # checking if the user got marks greater than or equal to 75  
+#     # inner if block  
+#     print("Congratulations! You passed with distinction.")  
+#   else:  
+#     # inner else block  
+#     print("You passed the exam.")  
+# else:  
+#   # outer else  
+# #   print("You failed the exam. Better luck next time.")
+
+# # asking user to enter temperature  
+# temperature = eval(input("Enter the temperature in Celsius: "))  
+  
+# # if-elif-else statement: checking temperature  
+# if temperature >= 30: # if temperature is greater than or equal to 30 deg  
+#   # if block  
+#   print("It's the hottest day.")  
+# elif temperature >= 20: # if temperature is greater than or equal to 20 deg  
+#   # elif block  
+#   print("The weather is warm.")  
+# elif temperature >= 10: # if temperature is greater than or equal to 10 deg  
+#   # another elif block  
+#   print("It's a cool day.")  
+# else: # if temp is less than 10 deg  
+#   # else block  
+#   print("It's a cold day.")
+
+
+# asking user to enter their marks  
+# marks = int(input("Enter your marks: "))  
+  
+# # if-elif-else statement: grading marks  
+# if marks >= 85: # if marks is greater or equal to 90, printing A  
+#   print("Grade: A")  
+# elif marks >= 65: # if marks is greater or equal to 80, printing B  
+#   print("Grade: B")  
+# elif marks >= 50: # if marks is greater or equal to 70, printing C  
+#   print("Grade: C")  
+# elif marks >= 33: # if marks is greater or equal to 60, printing D  
+#   print("Grade: D")  
+# else: # if marks is less than 90, printing F  
+#   print("Grade: F") 
+
+
+
+# Writeaprogramthataskstheusertoenteralengthincentimeters. Iftheuserentersanegative
+#  length, the program should tell the user that the entry is invalid. Otherwise, the program
+#  should convert the length to inches and print out the result. There are 2.54 centimeters in an
+#  inch.
