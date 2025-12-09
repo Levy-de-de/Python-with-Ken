@@ -780,7 +780,142 @@
 
 
 
-# Writeaprogramthataskstheusertoenteralengthincentimeters. Iftheuserentersanegative
+# Write a program that asks the user to enter a length in centimeters. If the user enters a negative
 #  length, the program should tell the user that the entry is invalid. Otherwise, the program
 #  should convert the length to inches and print out the result. There are 2.54 centimeters in an
 #  inch.
+# q.1
+# length = int(input("Enter length in cm:"))
+
+# if length < 0:
+#      print("invalid length")
+# else:
+#      inches = length / 2.54
+#      print("Your lenght in inches is:", inches)
+
+# # q.2
+# temp = float(input("Enter your temperature"))
+# unit = int(input("what unit do you want? \n 1.Celcius \n fahrenheit \n Enter 1 or 2:"))
+# fahrenheit = ((9/5) * temp) + 32
+# Celcius = ((5/9) * temp ) - 32
+# if unit == 1:
+#     print("Your temperature in fahrenheit is:", fahrenheit)
+# else:
+#     print("your temperature in celcius:", celcius)
+
+# q.3
+# temp = int(input("Enter your temperature in celcius:"))
+# if temp < -273.5:
+#     print("The temperature is invalid because it is absolute zero.")
+# elif temp == -273.15:
+#     print("The temperature is absolute 0")
+# elif temp >= -273 and temp < 0: 
+#     print("The temperature is below freezing")
+# elif temp == 0:
+#     print("temperature is at the freezing point")
+# elif temp >= 0 and temp < 100:
+#     print("The temperature is in the normal range")
+# elif temp == 100:
+#     print("The temperature is at the boiling point")
+# elif temp > 100:
+#     print("The temperature is above the boiling point")
+
+
+# # q.4
+# credits = int(input("How manu credits have you taken:"))
+# if credits <= 23:
+#     print("You are a freshman")
+# elif credits > 24 and credits < 53:
+#     print("You are a sophomore")
+# elif credits > 54 and credits < 83:
+#     print("You are a junior")
+# elif credits > 84:
+#     print("You are a senior")
+
+
+# # q.5
+# import random
+
+# number = random.randint(1, 10)
+# guess = int(input("Guess a number from 1-10:"))
+# if guess == number:
+#     print("Correct! You got the number")
+# else:
+#     print("Incorrect.Try again")
+
+
+
+# q.6
+# items = int(input("How many items are you buying?"))
+# if items < 10:
+#     cost = 12 * items
+#     print("The cost will be:", cost)
+# elif items > 10 and items < 99:
+#     cost = 10 * items
+#     print("The cost will be:", cost)
+# elif items > 100:
+#     cost = 7 * items
+#     print("The cost will be:", cost)
+
+
+# q.7
+# num1 = float(input("Enter your first number:"))
+# num2 = float(input("Enter your second number:"))
+
+# if abs(num1 - num2) <= 0.0001:
+#     print("close")
+# else:
+#     print("Not close")
+
+
+# q.8
+# year = int(input("Enter your year:"))
+# if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+#  print("It is a leap year") 
+# else:
+#  print("It is not a leap year")
+    
+
+# q.9
+# num = int(input("Enter a number:"))
+# print ("The divisors of", num, "are:") 
+# for i in range(1, num + 1):
+  
+#   if num % i == 0:
+#     print(i)
+
+
+# q.10
+# import random
+
+# for question in range(1, 10):
+#  num1 = random.randint(1, 10)
+#  num2 = random.randint(1, 10)
+# #  result = num1 * num2
+
+
+#  print(num1, "*", num2, "=", result )
+
+# import random
+# score = 0
+# for question in range(1, 11):
+#     num1 = random.randint(1, 10)
+#     num2 = random.randint(1, 10)
+    
+#     correct_answer = num1 * num2
+#     print(num1, "*", num2, "-")
+#     answer = int(input("Enter your answer:"))
+
+#     if correct_answer == answer:
+#         print("You are correct!")
+#         score = score + 1
+#     else:
+#         print("you are wrong! Correct answer is:", correct_answer)
+
+
+# property("Game Over!")
+# print("You got", score, "out of 10 questions correct!")    
+
+# q.11
+hour = int(input("Enter an hour between 1 and 12:"))
+time = int(input("Enter 1 for am and 2 for pm:"))
