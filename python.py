@@ -917,5 +917,128 @@
 # print("You got", score, "out of 10 questions correct!")    
 
 # q.11
-hour = int(input("Enter an hour between 1 and 12:"))
-time = int(input("Enter 1 for am and 2 for pm:"))
+# hour = int(input("Enter an hour between 1 and 12:"))
+# time = int(input("Enter 1 for am and 2 for pm:"))
+# future = int(input("How many hours ahead:"))
+
+# if time == 1 and hour == 12:
+#   hour = 0
+# elif time == 2 and hour != 12:
+#     hour = hour + 12
+
+# future_time = hour + future
+
+# if time == 1 and future_time != 12:
+#    print("The time will be: ", future_time) 
+# # 
+# # q.12 
+# # for N in range(1, 200):
+# #     if (N % 5 == 2) and (N % 6 == 3) and (N % 7 == 2):
+# #         print("The number of pieces in the bowl is:", N)  
+
+# import random
+
+# print("Welcome to Rock–Paper–Scissors!")
+# print("Enter: 1 for Rock, 2 for Paper, 3 for Scissors\n")
+
+# user_score = 0
+# computer_score = 0
+
+# for round in range(1, 6):     # Five rounds
+#     print("Round", round)
+#     user = int(input("Your choice (1=Rock, 2=Paper, 3=Scissors): "))
+#     computer = random.randint(1, 3)
+
+#     # Convert numbers to words
+#     choices = {1: "Rock", 2: "Paper", 3: "Scissors"}
+#     print("Computer chose:", choices[computer])
+
+#     # Compare choices
+#     if user == computer:
+#         print("It's a tie!\n")
+
+#     elif (user == 1 and computer == 3) or \
+#          (user == 2 and computer == 1) or \
+#          (user == 3 and computer == 2):
+#         print("You win this round!\n")
+#         user_score += 1
+#     else:
+#         print("Computer wins this round!\n")
+#         computer_score += 1
+
+# # Final results
+# print("Final Scores → You:", user_score, "Computer:", computer_score)
+
+# if user_score > computer_score:
+#     print("🎉 You won the game!")
+# elif user_score < computer_score:
+#     print("💻 The computer won the game!")
+# else:
+    # print("🤝 The game is a tie!")
+
+
+# age = -1
+# while age < 0:
+#     print("Tell me your age")
+
+
+# initializing a counter variable    
+# counter = 0    
+# # using the while loop to iterate the counter up to 5    
+# while counter < 5:    
+#   # printing the counter value and some statement    
+#   print(counter, "Hello")    
+#   # incrementing the counter value    
+#   counter += 1
+
+# creating a list of numbers  
+# num = [34, 12, 54, 23, 75, 34, 11]  
+  
+# # defining a function to check prime number  
+# def prime_number(number):  
+#     c = 0    
+#     i = 2    
+#     while i <= number / 2:    
+#         if number % i == 0:    
+#             c = 1    
+#             break    
+#         i = i + 1  
+#     if c == 0:  
+#         print(f"{number} is a PRIME number")  
+#     else:  
+#         print(f"{number} is not a PRIME number")  
+  
+# for i in num:    
+#     prime_number(i)
+
+# n = int(input("Enter a number"))    
+# n1=str(n)    
+# l=len(n1)    
+# temp=n    
+# s=0    
+# while n!=0:    
+#     r=n%10    
+#     s=s+(r**1)    
+#     n=n//10    
+# if s==temp:    
+#     print("It is an Armstrong number")    
+# else:    
+    # print("It is not an Armstrong number ")
+
+# num = 21    
+# counter = 1    
+# # We will use a while loop to iterate 10 times for the multiplication table            
+# print("The Multiplication Table of: ", num)      
+# while counter <= 10: # specifying the condition    
+#     ans = num * counter    
+#     print (num, 'x', counter, '=', ans)          
+#     counter += 1 # expression to increment the counter
+
+
+# age = 28    
+# # the test condition is always True    
+# while age > 19:    
+#     print('Infinite Loop') 
+
+while i in range (1, 51):
+    print(i)
